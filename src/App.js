@@ -4,6 +4,7 @@ import CardCatalog from './CardCatalog';
 import About from './About';
 import {Switch, Route, Link} from 'react-router-dom'
 
+
 class App extends Component {
   render() {
     return (
@@ -17,10 +18,14 @@ class App extends Component {
               </ul>
           </nav>
         </header>
-        <Switch>
-          <Route exact path ='/' component={CardCatalog}/>
-          <Route path = '/about' component={About}/>
-        </Switch>
+        <div className="container">
+          <div id="background" style={{backgroundImage: 'url(' + require('./resources/background.png') + ')'}}>
+          </div>
+          <Switch>
+              <Route exact path ='/' component={CardCatalog}/>
+              <Route path = '/about' component={About}/>
+          </Switch>
+        </div>
       </div>
     );
   }
