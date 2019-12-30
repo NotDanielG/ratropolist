@@ -1,47 +1,48 @@
 .App {
-  text-align: center;
+  margin:0;
+  padding:0;
 }
-
+body,html {
+  margin:0;
+  padding:0;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
 .App-header {
   background-color: #222;
-  height: 70px;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  margin:0;
+  height: 94vh;
+  width: 10%;
   padding: 20px;
   color: white;
 }
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 nav li {
-  display: inline-block;
+  display:block;
   padding:5px;
 }
 nav li a{
   color:white;
 }
+ul{
+  padding-inline-start: 0px;
+}
 .container{
-  width:100%;
-  height:100%;
+  display:block;
+  /* text-align:center; */
+  float:left;
+  background-size: cover;
+  width:90%;
+  overflow: hidden;
+  /* height:100%; */
+  /* min-height: 100vh; */
 }
 #background{
-  /* filter: brightness(40%); */
-  /* background-image: url(./resources/ratropolis_main.jpg) no-repeat center center fixed; */
-  background-size: cover;
+  /* background-size: cover; */
   height:100%;
   width:100%;
   position: absolute;

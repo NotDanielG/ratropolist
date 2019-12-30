@@ -9,17 +9,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <div className="App-header">
           <h1 className="App-title">Ratropolist</h1>
-            <nav>
-              <ul>
-                <li><Link to='/'>Cards</Link></li>
-                <li><Link to='/about'>About</Link></li>
-              </ul>
+          <nav>
+            <ul>
+              <li><Link to='/'>Cards</Link></li>
+              <li><Link to='/about'>About</Link></li>
+            </ul>
           </nav>
-        </header>
-        <div className="container">
-          <div id="background" style={{backgroundImage: 'url(' + require('./resources/background.png') + ')'}}>
+        </div>
+        <div className="container" style={{backgroundImage: 'url(' + require('./resources/background.png') + ')'}}>
+          <div id="background" >
           </div>
           <Switch>
               <Route exact path ='/' component={CardCatalog}/>
