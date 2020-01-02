@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CardList from './CardList';
+import './CardCatalog.css';
 
 class CardCatalog extends Component{
     constructor(){
