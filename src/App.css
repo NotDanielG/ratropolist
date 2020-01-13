@@ -13,12 +13,12 @@ nav li a{
 }
 .leftcol{
   display: inline-block;
-  width: 15%;
+  width: 10%;
   vertical-align: top;
 }
 .rightcol{
   display: inline-block;
-  width:85%;
+  width:90%;
   vertical-align: top;
 }
 .leftside, .rightside{
@@ -29,8 +29,5 @@ nav li a{
   background-color: #222;
 }
 .rightside{
-  /* background-color: indigo; */
-  background-image: url(./resources/background.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: darkslategray;
 }

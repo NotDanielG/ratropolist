@@ -5,3 +5,25 @@ h2{
     color:white;
 }
 
+.leftcol-list{
+    display: inline-block;
+    width: 90%;
+    vertical-align: top;
+}
+.rightcol-list{
+    display: inline-block;
+    width:10%;
+    vertical-align: top;
+}
+.leftside-list, .rightside-list{
+    min-height:100vh;
+    width:100%;
+}
+.leftside-list{
+    background-image: url(./resources/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.rightside-list{
+/* background-color: indigo; */
+}

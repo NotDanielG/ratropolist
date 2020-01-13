@@ -1,4 +1,4 @@
 [
-    {"code":"P01", "source": "./resources/grain.png","name": "Grain", "description": "Grains", "price": 4.5, "selected": false},
-    {"code":"P02", "source": "./resources/guards.png", "name": "Guards", "description": "Guards", "price": 4.5, "selected": false}
+    {"code":"P01", "class": "All","source": "./resources/grain.png","name": "Grain", "description": "Grains", "price": 4.5, "selected": false},
+    {"code":"P02", "class": "All","source": "./resources/guards.png", "name": "Guards", "description": "Guards", "price": 4.5, "selected": false}
 ]

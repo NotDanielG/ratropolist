@@ -23,8 +23,6 @@ class App extends Component {
             </div>
             <div className = "rightcol">
               <div className = "rightside">
-                {/* <div id="background"> </div> */}
-                {/* <div id="background" style={{backgroundImage: 'url(' + require('./resources/background.png') + ')'}}> </div> */}
                 <Switch>
                     <Route exact path ='/' component={CardCatalog}/>
                     <Route path = '/about' component={About}/>
