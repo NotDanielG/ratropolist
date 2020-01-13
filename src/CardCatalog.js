@@ -13,21 +13,31 @@ class CardCatalog extends Component{
             .catch(error => console.log(error));
     }
     textChangeHandler = (event) =>{
-        // this.setState();
+        // if(event.target.value.match("^[a-zA-Z ]*$") != null){
+        //     console.log("AYA");
+        // }
+        let filter = event.target.value;
         if(event.key === "Enter"){
             event.preventDefault();
-            let filter = event.target.value;
-            console.log("Key: ",event.key);
-            console.log("Filter:", filter);
+            if(this.checkInput(filter)){
+                console.log("Key: ",event.key);
+                console.log("Filter:", filter);
 
-            let info = this.getInfo();
-            let filteredList = this.getFilteredList(info, filter);
-            console.log(this.state.cards);
-            filteredList.then(data => {this.setState({cards: data})})
-                        .catch(error => console.log(error));
-            // this.setState({cards: filteredList});
+                let info = this.getInfo();
+                let filteredList = this.getFilteredList(info, filter);
+                console.log(this.state.cards);
+                filteredList.then(data => {this.setState({cards: data})})
+                            .catch(error => console.log(error));
+                // this.setState({cards: filteredList});
+            }
         }
         
+    }
+    checkInput(term){
+        if(term.match("^[a-zA-Z ]*$") != null){
+            return true;
+        }
+        return false;
     }
     async getFilteredList(info, filter){
         let filteredList = [];
