@@ -7,12 +7,12 @@ h2{
 
 .leftcol-list{
     display: inline-block;
-    width: 90%;
+    width: 80%;
     vertical-align: top;
 }
 .rightcol-list{
     display: inline-block;
-    width:10%;
+    width:20%;
     vertical-align: top;
 }
 .leftside-list, .rightside-list{
@@ -22,8 +22,9 @@ h2{
 .leftside-list{
     background-image: url(./resources/background.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100%;
 }
-.rightside-list{
-/* background-color: indigo; */
-}
+/* .rightside-list{
+background-color: indigo;
+} */

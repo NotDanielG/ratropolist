@@ -10,17 +10,21 @@ class App extends Component {
     return (
       <div className="App">
           <div className = "row">
-            <div className = "leftcol">
-              <div className = "leftside">
-                <h1 className="App-title">Ratropolist</h1>
-                <nav>
-                  <ul>
-                    <li><Link to='/'>Cards</Link></li>
-                    <li><Link to='/about'>About</Link></li>
-                  </ul>
-                </nav>
+
+            <div className = "leftcontainer">
+              <div className = "leftcol">
+                <div className = "leftside">
+                  <h1 className="App-title">Ratropolist</h1>
+                  <nav>
+                    <ul>
+                      <li><Link to='/'>Cards</Link></li>
+                      <li><Link to='/about'>About</Link></li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
             </div>
+
             <div className = "rightcol">
               <div className = "rightside">
                 <Switch>

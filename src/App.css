@@ -4,6 +4,9 @@
   text-align: center;
   color:white;
 }
+.row{
+  width:100%;
+}
 nav li {
   list-style-type:none;
   padding:5px;
@@ -11,22 +14,32 @@ nav li {
 nav li a{
   color:white;
 }
+.leftcontainer{
+  display: inline-block;
+  width: 13%;
+  vertical-align: top;
+  
+}
 .leftcol{
   display: inline-block;
-  width: 10%;
-  vertical-align: top;
+  position: fixed;
+  width: 13%;
+  /* vertical-align: top; */
 }
 .rightcol{
   display: inline-block;
-  width:90%;
+  width:87%;
   vertical-align: top;
 }
-.leftside, .rightside{
+/* .leftcol,.rightside{ */
+.rightside{
   min-height:100vh;
   width:100%;
 }
 .leftside{
   background-color: #222;
+  min-height: 100vh;
+  /* position:fixed; */
 }
 .rightside{
   background-color: darkslategray;
