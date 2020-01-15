@@ -3,6 +3,18 @@
   margin: 0px;
   text-align: center;
   color:white;
+
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+html, body{
+  margin:0;
+  padding:0;
+}
+h1, p{
+  margin:0 0 1em
 }
 .row{
   width:100%;
