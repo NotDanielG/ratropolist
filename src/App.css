@@ -28,19 +28,19 @@ nav li a{
 }
 .leftcontainer{
   display: inline-block;
-  width: 13%;
+  width: 12%;
   vertical-align: top;
   
 }
 .leftcol{
   display: inline-block;
   position: fixed;
-  width: 13%;
+  width: 12%;
   /* vertical-align: top; */
 }
 .rightcol{
   display: inline-block;
-  width:87%;
+  width:88%;
   vertical-align: top;
 }
 /* .leftcol,.rightside{ */

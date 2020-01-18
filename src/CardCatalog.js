@@ -5,11 +5,11 @@ import './CardCatalog.css';
 class CardCatalog extends Component{
     constructor(){
         super();
-        this.state = {cards: []};
+        this.state = {cards: [], filter: ""};
         
         fetch("cards.json")
             .then(response => response.json())
-            .then(json => {this.setState({cards: json})})
+            .then(json => {this.setState({cards: json, filter: ""})})
             .catch(error => console.log(error));
     }
     textChangeHandler = (event) =>{
@@ -17,17 +17,16 @@ class CardCatalog extends Component{
         //     console.log("AYA");
         // }
         let filter = event.target.value;
+        let name = event.target.name;
         if(event.key === "Enter"){
             event.preventDefault();
             if(this.checkInput(filter)){
-                console.log("Key: ",event.key);
-                console.log("Filter:", filter);
-
-                let info = this.getInfo();
-                let filteredList = this.getFilteredList(info, filter);
-                console.log(this.state.cards);
-                filteredList.then(data => {this.setState({cards: data})})
-                            .catch(error => console.log(error));
+                let info = this.getInfo(); //Gets card collection
+                this.setFilteredList(info, filter); //Sets the card collection based on filter type
+                this.setState({[name]: filter});
+                // filteredList.then(data => {this.setState({cards: data})})
+                //             .catch(error => console.log(error));
+                
                 // this.setState({cards: filteredList});
             }
         }
@@ -39,21 +38,21 @@ class CardCatalog extends Component{
         }
         return false;
     }
-    async getFilteredList(info, filter){
+    async setFilteredList(info, filter){
         let filteredList = [];
         await info.then(function(data){
             for(var i = 0; i < data.length; i++){
-                if(data[i]["name"].toLowerCase().includes(filter.toLowerCase()) || data[i]["description"].toLowerCase().includes(filter.toLowerCase()) || data[i]["class"].toLowerCase().includes(filter.toLowerCase())){
+                if(data[i]["type"].toLowerCase().includes(filter.toLowerCase()) ||data[i]["name"].toLowerCase().includes(filter.toLowerCase()) || 
+                   data[i]["description"].toLowerCase().includes(filter.toLowerCase()) || data[i]["class"].toLowerCase().includes(filter.toLowerCase())){
                     filteredList.push(data[i]);
                 }
             }
         })
-        return filteredList;
+        this.setState({cards: filteredList});
     }
     async getInfo(){
         var res = await fetch("cards.json");
         return res.json();
-        
     }
     render(){
         return <div>
@@ -68,6 +67,7 @@ class CardCatalog extends Component{
                     <form>
                         <p>Search</p>
                         <input type = "text"
+                        name = "filter"
                         onKeyPress={this.textChangeHandler}/>;
                     </form>
                 </div>
