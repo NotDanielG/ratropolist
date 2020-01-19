@@ -7,7 +7,6 @@ class Card extends Component{
         let source = this.props.card.source;
         return <Popup className = "popup" modal trigger ={<img className = "card" src={require(""+source)} alt ={this.props.card.source}/>}>
             <img src={require(""+source)} alt ={this.props.card.source}/>
-            <span className = "description"> AYAYA</span>
         </Popup>
     }
 }

@@ -70,14 +70,16 @@ class CardCatalog extends Component{
                     <CardList cards = {this.state.cards}/>
                 </div>
             </div>
-            <div className = "rightcol-list">
-                <div className = "rightside-list">
-                    <form>
-                        <p>Search</p>
-                        <input type = "text"
-                        name = "filter"
-                        onKeyPress={this.textChangeHandler}/>;
-                    </form>
+            <div className = "rightcol-list-container">
+                <div className = "rightcol-list">
+                    <div className = "rightside-list">
+                        <form>
+                            <p>Search</p>
+                            <input type = "text"
+                            name = "filter"
+                            onKeyPress={this.textChangeHandler}/>;
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>;

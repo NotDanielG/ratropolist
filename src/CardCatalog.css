@@ -10,6 +10,12 @@ h2{
     width: 80%;
     vertical-align: top;
 }
+.rightcol-list-container{
+    display: inline-block;
+    width:20%;
+    vertical-align: top;
+    position:fixed;
+}
 .rightcol-list{
     display: inline-block;
     width:20%;
