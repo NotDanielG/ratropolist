@@ -24,10 +24,7 @@ class CardCatalog extends Component{
                 let info = this.getInfo(); //Gets card collection
                 this.setFilteredList(info, filter); //Sets the card collection based on filter type
                 this.setState({[name]: filter});
-                // filteredList.then(data => {this.setState({cards: data})})
-                //             .catch(error => console.log(error));
-                
-                // this.setState({cards: filteredList});
+                // this.tagsIncluded();
             }
         }
         
@@ -40,15 +37,26 @@ class CardCatalog extends Component{
     }
     async setFilteredList(info, filter){
         let filteredList = [];
-        await info.then(function(data){
+        
+        await info.then((data) => {
             for(var i = 0; i < data.length; i++){
                 if(data[i]["type"].toLowerCase().includes(filter.toLowerCase()) ||data[i]["name"].toLowerCase().includes(filter.toLowerCase()) || 
-                   data[i]["description"].toLowerCase().includes(filter.toLowerCase()) || data[i]["class"].toLowerCase().includes(filter.toLowerCase())){
+                   data[i]["description"].toLowerCase().includes(filter.toLowerCase()) || data[i]["class"].toLowerCase().includes(filter.toLowerCase()) ||
+                   this.tagsIncluded(data[i]["tags"], filter)){
                     filteredList.push(data[i]);
                 }
             }
         })
         this.setState({cards: filteredList});
+    }
+    tagsIncluded(tags, filter){
+        for(var i = 0; i < tags.length; i++){
+            console.log(tags[i], filter, tags[i].toLowerCase().includes(filter.toLowerCase()))
+            if(tags[i].toLowerCase().includes(filter.toLowerCase())){
+                return true;
+            }
+        }
+        return false;
     }
     async getInfo(){
         var res = await fetch("cards.json");

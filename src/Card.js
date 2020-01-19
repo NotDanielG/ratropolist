@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './Card.css'
+import Popup from "reactjs-popup";
 
 class Card extends Component{
     render(){
-        // let classToApply = this.props.product.selected? "selected": "";
         let source = this.props.card.source;
-        // alert(source);
-        return <img className = "card" src={require(""+source)} alt ={this.props.card.source}/>
+        return <Popup className = "popup" modal trigger ={<img className = "card" src={require(""+source)} alt ={this.props.card.source}/>}>
+            <img src={require(""+source)} alt ={this.props.card.source}/>
+            <span className = "description"> AYAYA</span>
+        </Popup>
     }
 }
 export default Card;
