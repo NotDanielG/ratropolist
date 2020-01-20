@@ -3,7 +3,7 @@
   margin: 0px;
   text-align: center;
   color:white;
-
+  font-family: apple-system, BlinkMacSystemFont, Roboto, sans-serif;
 }
 body {
   padding: 0;
@@ -36,7 +36,7 @@ nav li a{
   display: inline-block;
   position: fixed;
   width: 12%;
-  /* vertical-align: top; */
+  box-shadow: rgba(21, 11, 37, 0.5) 2px 0px 10px 2px;
 }
 .rightcol{
   display: inline-block;
@@ -49,10 +49,10 @@ nav li a{
   width:100%;
 }
 .leftside{
-  background-color: #222;
+  background-color: #151515;
   min-height: 100vh;
   /* position:fixed; */
 }
 .rightside{
-  background-color: darkslategray;
+  background-color: #151515;
 }

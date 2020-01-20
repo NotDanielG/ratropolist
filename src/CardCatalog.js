@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import CardList from './CardList';
 import './CardCatalog.css';
+import Select from "react-select";
+
+const options = [
+    { value: 'Action', label: 'Action' },
+    { value: 'Hoard', label: 'Hoard' },
+    { value: 'Labor', label: 'Labor' }
+]
 
 class CardCatalog extends Component{
     constructor(){
@@ -13,9 +20,6 @@ class CardCatalog extends Component{
             .catch(error => console.log(error));
     }
     textChangeHandler = (event) =>{
-        // if(event.target.value.match("^[a-zA-Z ]*$") != null){
-        //     console.log("AYA");
-        // }
         let filter = event.target.value;
         let name = event.target.name;
         if(event.key === "Enter"){
@@ -62,6 +66,9 @@ class CardCatalog extends Component{
         var res = await fetch("cards.json");
         return res.json();
     }
+    action(){
+        alert("hello");
+    }
     render(){
         return <div>
             <div className = "leftcol-list">
@@ -73,11 +80,21 @@ class CardCatalog extends Component{
             <div className = "rightcol-list-container">
                 <div className = "rightcol-list">
                     <div className = "rightside-list">
+                        <p className = "search-title">Search</p>
                         <form>
-                            <p>Search</p>
-                            <input type = "text"
-                            name = "filter"
-                            onKeyPress={this.textChangeHandler}/>;
+                            <input className = "searchbar" type = "text" name = "filter" onKeyPress={this.textChangeHandler}/>
+                            <div className ="mechanics-list">  {/*Make into class  */}
+                                <div className="mechanic">Active</div>
+                                <div className="mechanic">Rear Rank</div>
+                                <div className="mechanic">Bounty</div>
+                                <div className="mechanic">Tax</div>
+                                <div className="mechanic">Hoard</div>
+                                <div className="mechanic">Soul</div>
+                                <div className="mechanic">Soul Siphon</div>
+                                <div className="mechanic">Soul Building</div>
+                                <div className="mechanic">Single-Use</div>
+                                <div className="mechanic">Production</div>
+                            </div>
                         </form>
                     </div>
                 </div>
