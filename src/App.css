@@ -56,3 +56,7 @@ nav li a{
 .rightside{
   background-color: #151515;
 }
+html {
+  overflow: -moz-scrollbars-vertical; 
+  overflow-y: scroll;
+}

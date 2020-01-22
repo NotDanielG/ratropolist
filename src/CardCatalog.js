@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CardList from './CardList';
 import './CardCatalog.css';
-import MechanicList from './MechanicList'
+import MechanicList from './MechanicList';
 
 
 class CardCatalog extends Component{
@@ -99,16 +99,18 @@ class CardCatalog extends Component{
         return <div>
             <div className = "leftcol-list">
                 <div className = "leftside-list">
-                    <h2>Card Catalog</h2>
+                    <h2>Card Gallery</h2>
                     <CardList cards = {this.state.cards}/>
                 </div>
             </div>
             <div className = "rightcol-list-container">
                 <div className = "rightcol-list">
                     <div className = "rightside-list">
-                        <p className = "search-title">Search</p>
+                        <p className = "search-title">Search Filters</p>
                         <form>
-                            <input className = "searchbar" type = "text" name = "filter" onKeyPress={this.textChangeHandler}/>
+                            <div className = "section"><p className="filter-title">Keyword</p> <div className ="divider"></div></div>
+                            <div className = "input-div"><input className = "searchbar" type = "text" name = "filter" onKeyPress={this.textChangeHandler}/></div><br/>
+                            <div className = "section"><p className="filter-title">Mechanic</p> <div className ="divider"></div></div>
                             <MechanicList handler = {this.mechanicChangeHandler}/>
                         </form>
                     </div>
