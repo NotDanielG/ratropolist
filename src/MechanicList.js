@@ -5,7 +5,7 @@ import Mechanic from './Mechanic'
 
 class MechanicList extends Component{
     render(){
-        let type_list = ["Active","Rear Rank","Bounty","Tax","Hoard","Production","Single-Use","Soul","Soul Siphon","Soul Building"];
+        let type_list = ["Active","Labor","Ephemeral","Rear Rank","Bounty","Tax","Hoard","Production","Single-Use","Soul","Soul Siphon","Soul Building"];
         let mech_list = [];
         for(var i = 0; i < type_list.length; i++){
             // console.log(mech);
