@@ -69,16 +69,22 @@ class CardCatalog extends Component{
             }
             for(i = filteredList.length -1; i >= 0; i--){
                 for(var j = 0; j < this.mechanic_filter.length; j++){
+                    
                     if(!this.tagsIncluded(filteredList[i]["tags"],this.mechanic_filter[j])){
+                        console.log("H");
                         filteredList.splice(i, 1);
                         j = this.mechanic_filter.length;
                     }
+                    
                 }
             }
             for(i = filteredList.length-1; i >= 0; i--){
-                if(!this.typeIncluded(filteredList[i])){
-                    filteredList.splice(i, 1);
-                    j = this.type_filter.length;
+                if(this.type_filter.length > 0){
+                    if(!this.typeIncluded(filteredList[i])){
+                        console.log("I");
+                        filteredList.splice(i, 1);
+                        j = this.type_filter.length;
+                    }
                 }
             }
             for(i = filteredList.length-1; i >= 0; i--){
