@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2ff08a1c394082d0be3fd169c4cd705b",
+    "revision": "03c3fcf37f14f9a5905ec041caea7826",
     "url": "/Ratropolist/index.html"
   },
   {
-    "revision": "30746526a213d2857474",
+    "revision": "901b727a409f69612425",
     "url": "/Ratropolist/static/css/main.0b83db89.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Ratropolist/static/js/2.85cba349.chunk.js"
   },
   {
-    "revision": "30746526a213d2857474",
-    "url": "/Ratropolist/static/js/main.23cb7ada.chunk.js"
+    "revision": "901b727a409f69612425",
+    "url": "/Ratropolist/static/js/main.de15c33e.chunk.js"
   },
   {
     "revision": "57188b24122dc8a1f40f",
