@@ -1,0 +1,27 @@
+.about-page{
+    background-image: url(./resources/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    width:100%;
+    min-height: 100vh;
+    /* text-align: center; */
+    margin: 0 auto;
+    /* vertical-align: middle; */
+}
+.about-information{
+    width:100%;
+    min-height:100vh;
+    /* background-color: #373737; */
+    /* background: rgba(55, 55, 55, .2); */
+    display:inline-block;
+    color:white;
+}
+.official-links{
+    color:white;
+}
+.p-tags{
+    width:90%;
+    padding-left: 5%;
+    padding-top: 5%;
+}

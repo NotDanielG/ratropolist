@@ -1,0 +1,14 @@
+.economy-page{
+    background-image: url(./resources/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    width:100%;
+    min-height: 100vh;
+}
+.economy-information{
+    width:100%;
+    min-height:100vh;
+    display:inline-block;
+    color:white;
+}

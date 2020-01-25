@@ -1,0 +1,21 @@
+.guide-page{
+    background-image: url(./resources/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    width:100%;
+    min-height: 100vh;
+}
+.guide-information{
+    width:100%;
+    min-height:100vh;
+    display:inline-block;
+    color:white;
+}
+.titles{
+    font-size: 20px;
+}
+.guide-image{
+    width:15%;
+    padding:10px;
+}

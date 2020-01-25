@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import CardCatalog from './CardCatalog';
 import About from './About';
-import {Switch, Route, Link} from 'react-router-dom'
+import Guide from './Guide';
+import Economy from './Economy';
+import Military from './Military';
+import {Switch, Route, Link} from 'react-router-dom';
 
 
 class App extends Component {
@@ -14,10 +17,13 @@ class App extends Component {
             <div className = "leftcontainer">
               <div className = "leftcol">
                 <div className = "leftside">
-                  <h1 className="App-title">Ratropolist</h1>
+                  <Link className ="App-link" to = '/'><h1 className="App-title">Ratropolist</h1></Link>
                   <nav>
-                    <ul>
-                      <li><Link to='/'>Cards</Link></li>
+                    <ul className = "page-selection">
+                      <li><Link to='/'>Card Gallery</Link></li>
+                      <li><Link to='/guide'>Basic Guide to 30</Link></li>
+                      <li><Link to='/economy'>Economy Builds</Link></li>
+                      <li><Link to='/military'>Military Builds</Link></li>
                       <li><Link to='/about'>About</Link></li>
                     </ul>
                   </nav>
@@ -29,6 +35,9 @@ class App extends Component {
               <div className = "rightside">
                 <Switch>
                     <Route exact path ='/' component={CardCatalog}/>
+                    <Route path = '/guide' component={Guide}/>
+                    <Route path = '/economy' component={Economy}/>
+                    <Route path = '/military' component={Military}/>
                     <Route path = '/about' component={About}/>
                 </Switch>
               </div>

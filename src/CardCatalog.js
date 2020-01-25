@@ -71,7 +71,6 @@ class CardCatalog extends Component{
                 for(var j = 0; j < this.mechanic_filter.length; j++){
                     
                     if(!this.tagsIncluded(filteredList[i]["tags"],this.mechanic_filter[j])){
-                        console.log("H");
                         filteredList.splice(i, 1);
                         j = this.mechanic_filter.length;
                     }
@@ -81,7 +80,6 @@ class CardCatalog extends Component{
             for(i = filteredList.length-1; i >= 0; i--){
                 if(this.type_filter.length > 0){
                     if(!this.typeIncluded(filteredList[i])){
-                        console.log("I");
                         filteredList.splice(i, 1);
                         j = this.type_filter.length;
                     }
@@ -121,7 +119,6 @@ class CardCatalog extends Component{
         return <div>
             <div className = "leftcol-list">
                 <div className = "leftside-list">
-                    <h2>Card Gallery</h2>
                     <CardList cards = {this.state.cards}/>
                 </div>
             </div>
