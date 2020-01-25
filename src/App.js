@@ -24,7 +24,7 @@ class App extends Component {
                       <li><Link to='/guide'>Basic Guide to 30</Link></li>
                       <li><Link to='/economy'>Economy Builds</Link></li>
                       <li><Link to='/military'>Military Builds</Link></li>
-                      <li><Link to='/about'>About</Link></li>
+                      <li><Link to='/'>About</Link></li>
                     </ul>
                   </nav>
                 </div>
@@ -34,11 +34,11 @@ class App extends Component {
             <div className = "rightcol">
               <div className = "rightside">
                 <Switch>
-                    <Route exact path ='/' component={CardCatalog}/>
+                    <Route path ='/' component={CardCatalog}/>
                     <Route path = '/guide' component={Guide}/>
                     <Route path = '/economy' component={Economy}/>
                     <Route path = '/military' component={Military}/>
-                    <Route path = '/about' component={About}/>
+                    <Route path = '/' component={About}/>
                 </Switch>
               </div>
             </div>
