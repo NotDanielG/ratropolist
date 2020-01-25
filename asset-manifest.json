@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Ratropolist/static/css/main.0b83db89.chunk.css",
-    "main.js": "/Ratropolist/static/js/main.7c640f1e.chunk.js",
-    "main.js.map": "/Ratropolist/static/js/main.7c640f1e.chunk.js.map",
+    "main.js": "/Ratropolist/static/js/main.23cb7ada.chunk.js",
+    "main.js.map": "/Ratropolist/static/js/main.23cb7ada.chunk.js.map",
     "runtime-main.js": "/Ratropolist/static/js/runtime-main.4304c8e7.js",
     "runtime-main.js.map": "/Ratropolist/static/js/runtime-main.4304c8e7.js.map",
     "static/js/2.85cba349.chunk.js": "/Ratropolist/static/js/2.85cba349.chunk.js",
     "static/js/2.85cba349.chunk.js.map": "/Ratropolist/static/js/2.85cba349.chunk.js.map",
     "index.html": "/Ratropolist/index.html",
-    "precache-manifest.8c9536c6c9f2ea0fe7e66ba5e2e2049d.js": "/Ratropolist/precache-manifest.8c9536c6c9f2ea0fe7e66ba5e2e2049d.js",
+    "precache-manifest.86525ae532bba10382a41712d80582a0.js": "/Ratropolist/precache-manifest.86525ae532bba10382a41712d80582a0.js",
     "service-worker.js": "/Ratropolist/service-worker.js",
     "static/css/main.0b83db89.chunk.css.map": "/Ratropolist/static/css/main.0b83db89.chunk.css.map",
     "static/media/agit.png": "/Ratropolist/static/media/agit.817972d1.png",
@@ -178,6 +178,6 @@
     "static/js/runtime-main.4304c8e7.js",
     "static/js/2.85cba349.chunk.js",
     "static/css/main.0b83db89.chunk.css",
-    "static/js/main.7c640f1e.chunk.js"
+    "static/js/main.23cb7ada.chunk.js"
   ]
 }
