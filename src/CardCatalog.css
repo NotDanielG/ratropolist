@@ -3,7 +3,7 @@
     color: white;
     padding-left:3%;
     width:30%;
-    font-size: 16px;
+    font-size: 20px;
 }
 .section{
     /* padding-top:10px; */
@@ -52,7 +52,7 @@ input[type=text]:focus{
     padding-top: 10px;
     padding-left: 3%;
     color:white;
-    font-size: 18px;
+    font-size: 24px;
 }
 .leftcol-list{
     display: inline-block;
