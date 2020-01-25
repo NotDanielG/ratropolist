@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "16b14d7cf0e6d71eab7f962f49c7a0c6",
+    "revision": "78e10d896abe8bff32b4c2517dec1c74",
     "url": "/Ratropolist/index.html"
   },
   {
