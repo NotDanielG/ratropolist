@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/ratropolist/static/css/main.08e06d93.chunk.css",
-    "main.js": "/ratropolist/static/js/main.33d1fd1c.chunk.js",
-    "main.js.map": "/ratropolist/static/js/main.33d1fd1c.chunk.js.map",
-    "runtime-main.js": "/ratropolist/static/js/runtime-main.076b6445.js",
-    "runtime-main.js.map": "/ratropolist/static/js/runtime-main.076b6445.js.map",
-    "static/js/2.1ac3ed28.chunk.js": "/ratropolist/static/js/2.1ac3ed28.chunk.js",
-    "static/js/2.1ac3ed28.chunk.js.map": "/ratropolist/static/js/2.1ac3ed28.chunk.js.map",
+    "main.css": "/ratropolist/static/css/main.4004c00d.chunk.css",
+    "main.js": "/ratropolist/static/js/main.5a033402.chunk.js",
+    "main.js.map": "/ratropolist/static/js/main.5a033402.chunk.js.map",
+    "runtime-main.js": "/ratropolist/static/js/runtime-main.4743e9b0.js",
+    "runtime-main.js.map": "/ratropolist/static/js/runtime-main.4743e9b0.js.map",
+    "static/js/2.2f0dfa29.chunk.js": "/ratropolist/static/js/2.2f0dfa29.chunk.js",
+    "static/js/2.2f0dfa29.chunk.js.map": "/ratropolist/static/js/2.2f0dfa29.chunk.js.map",
     "index.html": "/ratropolist/index.html",
-    "precache-manifest.be3adbe128c326879da3b63b9495c786.js": "/ratropolist/precache-manifest.be3adbe128c326879da3b63b9495c786.js",
+    "precache-manifest.d944cd078a72d9d0b9372ba93b18934a.js": "/ratropolist/precache-manifest.d944cd078a72d9d0b9372ba93b18934a.js",
     "service-worker.js": "/ratropolist/service-worker.js",
-    "static/css/main.08e06d93.chunk.css.map": "/ratropolist/static/css/main.08e06d93.chunk.css.map",
+    "static/css/main.4004c00d.chunk.css.map": "/ratropolist/static/css/main.4004c00d.chunk.css.map",
+    "static/js/2.2f0dfa29.chunk.js.LICENSE": "/ratropolist/static/js/2.2f0dfa29.chunk.js.LICENSE",
     "static/media/agit.png": "/ratropolist/static/media/agit.817972d1.png",
     "static/media/aid_station.png": "/ratropolist/static/media/aid_station.4391e58c.png",
     "static/media/air_strike.png": "/ratropolist/static/media/air_strike.f1e37b7c.png",
@@ -175,9 +176,9 @@
     "static/media/work.png": "/ratropolist/static/media/work.d7d9097e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.076b6445.js",
-    "static/js/2.1ac3ed28.chunk.js",
-    "static/css/main.08e06d93.chunk.css",
-    "static/js/main.33d1fd1c.chunk.js"
+    "static/js/runtime-main.4743e9b0.js",
+    "static/js/2.2f0dfa29.chunk.js",
+    "static/css/main.4004c00d.chunk.css",
+    "static/js/main.5a033402.chunk.js"
   ]
 }

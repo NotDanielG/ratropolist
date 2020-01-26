@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ratropolist/precache-manifest.be3adbe128c326879da3b63b9495c786.js"
+  "/ratropolist/precache-manifest.d944cd078a72d9d0b9372ba93b18934a.js"
 );
 
 self.addEventListener('message', (event) => {
