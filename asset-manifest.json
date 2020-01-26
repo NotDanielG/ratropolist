@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ratropolist/static/css/main.4004c00d.chunk.css",
-    "main.js": "/ratropolist/static/js/main.5a033402.chunk.js",
-    "main.js.map": "/ratropolist/static/js/main.5a033402.chunk.js.map",
+    "main.js": "/ratropolist/static/js/main.44334d9a.chunk.js",
+    "main.js.map": "/ratropolist/static/js/main.44334d9a.chunk.js.map",
     "runtime-main.js": "/ratropolist/static/js/runtime-main.4743e9b0.js",
     "runtime-main.js.map": "/ratropolist/static/js/runtime-main.4743e9b0.js.map",
     "static/js/2.2f0dfa29.chunk.js": "/ratropolist/static/js/2.2f0dfa29.chunk.js",
     "static/js/2.2f0dfa29.chunk.js.map": "/ratropolist/static/js/2.2f0dfa29.chunk.js.map",
     "index.html": "/ratropolist/index.html",
-    "precache-manifest.d944cd078a72d9d0b9372ba93b18934a.js": "/ratropolist/precache-manifest.d944cd078a72d9d0b9372ba93b18934a.js",
+    "precache-manifest.bf77406d4641e5663be45239d230f6f2.js": "/ratropolist/precache-manifest.bf77406d4641e5663be45239d230f6f2.js",
     "service-worker.js": "/ratropolist/service-worker.js",
     "static/css/main.4004c00d.chunk.css.map": "/ratropolist/static/css/main.4004c00d.chunk.css.map",
     "static/js/2.2f0dfa29.chunk.js.LICENSE": "/ratropolist/static/js/2.2f0dfa29.chunk.js.LICENSE",
@@ -179,6 +179,6 @@
     "static/js/runtime-main.4743e9b0.js",
     "static/js/2.2f0dfa29.chunk.js",
     "static/css/main.4004c00d.chunk.css",
-    "static/js/main.5a033402.chunk.js"
+    "static/js/main.44334d9a.chunk.js"
   ]
 }
