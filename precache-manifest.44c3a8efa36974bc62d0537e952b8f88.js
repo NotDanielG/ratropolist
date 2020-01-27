@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e43a1f9cd2b61742f08adffc8fd9920",
+    "revision": "a908179981d5a3fee863dde4a11bc046",
     "url": "/ratropolist/index.html"
   },
   {
-    "revision": "717cb5c2c21252290bcc",
-    "url": "/ratropolist/static/css/main.4004c00d.chunk.css"
+    "revision": "8d9453caae6969260cc2",
+    "url": "/ratropolist/static/css/main.c7d98b31.chunk.css"
   },
   {
-    "revision": "175d5781fe1962b9e6a7",
-    "url": "/ratropolist/static/js/2.2f0dfa29.chunk.js"
+    "revision": "82d5c3697043fac52554",
+    "url": "/ratropolist/static/js/2.2f68738f.chunk.js"
   },
   {
     "revision": "64e69b90b972716b2a54f01379285047",
-    "url": "/ratropolist/static/js/2.2f0dfa29.chunk.js.LICENSE"
+    "url": "/ratropolist/static/js/2.2f68738f.chunk.js.LICENSE"
   },
   {
-    "revision": "717cb5c2c21252290bcc",
-    "url": "/ratropolist/static/js/main.44334d9a.chunk.js"
+    "revision": "8d9453caae6969260cc2",
+    "url": "/ratropolist/static/js/main.37e1d88c.chunk.js"
   },
   {
     "revision": "ce2f00ffe104afc66651",
