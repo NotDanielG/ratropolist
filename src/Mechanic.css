@@ -1,6 +1,7 @@
 .mechanic{
     width:40%;
     padding: 5px;
+    text-align: center;
     display: inline-block;
     font-size: 18px;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
