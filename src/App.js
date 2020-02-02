@@ -16,7 +16,7 @@ class App extends Component {
             <div className = "leftcontainer">
               <div className = "leftcol">
                 <div className = "leftside">
-                  <Link className ="App-link" to = '/'><h1 className="App-title">Ratropolist</h1></Link>
+                  <Link className ="App-link" to = '/'><div className="App-title">Ratropolist</div></Link>
                   <nav>
                     <ul className = "page-selection">
                       <li><Link to='/'>Card Gallery</Link></li>
