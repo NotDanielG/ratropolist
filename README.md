@@ -11,7 +11,7 @@ This site will serve as a resource for those new to the game and guide them what
 This project is developed with ReactJS, so Node is a requirement in order to run this project.
 
 ## Pictures
-
+![frontpage](src/resources/readme_image.jpg)
 
 ## Run
 Once repository is cloned, use `npm start`. 
