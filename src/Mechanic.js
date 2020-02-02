@@ -4,9 +4,7 @@ import './Mechanic.css'
 class Mechanic extends Component{
     constructor(){
         super();
-        // this.setState({toggle: false});
         this.toggle = false;
-        /*#222 or #2b2b2b*/
     }
     handleClick = (event) => {
         if(!this.toggle){

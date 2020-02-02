@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Type.css'
+import './Type.css';
 
 class Type extends Component{
     constructor(){

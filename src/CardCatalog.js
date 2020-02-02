@@ -3,6 +3,7 @@ import CardList from './CardList';
 import './CardCatalog.css';
 import MechanicList from './MechanicList';
 import TypeList from './TypeList';
+import Section from './Section';
 
 
 class CardCatalog extends Component{
@@ -127,11 +128,11 @@ class CardCatalog extends Component{
                     <div className = "rightside-list">
                         <p className = "search-title">Search Filters</p>
                         <form>
-                            <div className = "section"><p className="filter-title">Keyword</p> <div className ="divider"></div></div>
+                            <Section title = "Keyword"/>
                             <div className = "input-div"><input className = "searchbar" type = "text" name = "filter" onKeyPress={this.textChangeHandler}/></div><br/>
-                            <div className = "section"><p className="filter-title">Card Type</p> <div className ="divider"></div></div>
+                            <Section title = "Card Type"/>
                             <TypeList handler = {this.typeChangeHandler}/><br/>
-                            <div className = "section"><p className="filter-title">Mechanic</p> <div className ="divider"></div></div>
+                            <Section title = "Mechanic"/>
                             <MechanicList handler = {this.mechanicChangeHandler}/>
 
                         </form>
