@@ -9,7 +9,7 @@ class MechanicList extends Component{
         let mech_list = [];
         for(var i = 0; i < type_list.length; i++){
             // console.log(mech);
-            mech_list.push(<Mechanic handler = {this.props.handler} mechanic={type_list[i]}/>);
+            mech_list.push(<Mechanic key={type_list[i]} handler = {this.props.handler} mechanic={type_list[i]}/>);
         }
 
         return <div className = "mechanic-list">

@@ -13,7 +13,7 @@ class CardCatalog extends Component{
         this.mechanic_filter = [];
         this.type_filter = [];
         this.filter = "";
-        fetch("cards.json")
+        fetch("card_data.json")
             .then(response => response.json())
             .then(json => {this.setState({cards: json})})
             .catch(error => console.log(error));
@@ -65,30 +65,27 @@ class CardCatalog extends Component{
     async setFilteredList(info, filter){
         let filteredList = [];
         await info.then((data) => {
-            for(var i = 0; i < data.length; i++){
-                filteredList.push(data[i])
-            }
-            for(i = filteredList.length -1; i >= 0; i--){
+            filteredList = data;
+
+            for(var i = filteredList.length -1; i >= 0; i--){ //mechanics list
                 for(var j = 0; j < this.mechanic_filter.length; j++){
-                    
-                    if(!this.tagsIncluded(filteredList[i]["tags"],this.mechanic_filter[j])){
+                    if(!this.tagsIncluded(filteredList[i], this.mechanic_filter[j])){
                         filteredList.splice(i, 1);
                         j = this.mechanic_filter.length;
                     }
-                    
                 }
             }
-            for(i = filteredList.length-1; i >= 0; i--){
+
+            for(i = filteredList.length-1; i >= 0; i--){ //card type
                 if(this.type_filter.length > 0){
                     if(!this.typeIncluded(filteredList[i])){
                         filteredList.splice(i, 1);
-                        j = this.type_filter.length;
                     }
                 }
             }
-            for(i = filteredList.length-1; i >= 0; i--){
+            for(i = filteredList.length-1; i >= 0; i--){ //Keyword
                 if(!(filteredList[i]["type"].toLowerCase().includes(filter.toLowerCase()) ||filteredList[i]["name"].toLowerCase().includes(filter.toLowerCase()) || 
-                filteredList[i]["description"].toLowerCase().includes(filter.toLowerCase()) || filteredList[i]["class"].toLowerCase().includes(filter.toLowerCase()))){
+                filteredList[i]["rarity"].toLowerCase().includes(filter.toLowerCase()) || filteredList[i]["effect"].toLowerCase().includes(filter.toLowerCase()))){
                     filteredList.splice(i, 1);
                 }
             }
@@ -104,16 +101,14 @@ class CardCatalog extends Component{
         }
         return false;
     }
-    tagsIncluded(tags, filter){
-        for(var i = 0; i < tags.length; i++){
-            if(tags[i].toLowerCase().includes(filter.toLowerCase())){
-                return true;
-            }
+    tagsIncluded(card, filter){
+        if(card["effect"].toLowerCase().includes(filter.toLowerCase())){
+            return true;
         }
         return false;
     }
     async getInfo(){
-        var res = await fetch("cards.json");
+        var res = await fetch("card_data.json");
         return res.json();
     }
     render(){

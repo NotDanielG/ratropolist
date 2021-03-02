@@ -5,7 +5,7 @@ class CardList extends Component{
     render(){
         let cards_list = [];
         for(let card of this.props.cards){
-            cards_list.push(<Card card={card}/>);
+            cards_list.push(<Card key = {card.name} card={card}/>);
         }
     return <div>{cards_list}</div>;
     }
