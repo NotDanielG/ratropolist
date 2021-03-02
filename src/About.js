@@ -10,7 +10,8 @@ class About extends Component {
             <p>This site is not an official site of <a className = "official-links" href="http://casselgames.com/">Cassel Games</a>. All ingame artwork is property of Cassel Games and is used with their permission.
             Steam link for <a className = "official-links"href = "https://store.steampowered.com/app/1108370/Ratropolis/">Ratropolis. </a></p>
             
-            <p>The site uses material from the Ratropolis wiki at <a className = "official-links" href="https://ratropolis.fandom.com/wiki/Ratropolis_Wiki">Fandom.</a></p>
+            <p>The site uses material from the Ratropolis wiki at <a className = "official-links" href="https://ratropolis.fandom.com/wiki/Ratropolis_Wiki">Fandom
+             and is licensed under the Creative Commons Attribution-Share Alike License.</a></p>
           </div>
         </div>
       </div>
